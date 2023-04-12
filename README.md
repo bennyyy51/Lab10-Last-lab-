@@ -2,8 +2,8 @@
 
 Liban - initial table
 
-Dylan - Resize 
+Dylan - Resize
 
-Megan - Add
+Megan - Add, Student
 
-Benjamin - Find
+Benjamin - Find, testing
