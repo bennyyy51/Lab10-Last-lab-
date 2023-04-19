@@ -1,5 +1,6 @@
 package student;
 
+//By Megan Fleck
 public class Student {
 	private String name;
 	private int hashValue1;
@@ -19,10 +20,7 @@ public class Student {
 	}
 
 	public int hashCode(int n) {
-		int value = (name.charAt(n) % 10);
-		if (value == 0) {
-			value = 1;
-		}
-		return 0;
+		int value = Character.toUpperCase(name.charAt(n));
+		return value;
 	}
 }
