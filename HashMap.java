@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /*
  * A class for HashMaps with methods LF and resize.
- * @author Dylan Nguyen, updated by Megan
+ * @author Dylan Nguyen
  */
 public class HashMap {
 	
@@ -74,6 +74,6 @@ public class HashMap {
 		//no open spot found, resizing and trying again
 		resize();
 		add(val);
-		return false;
+		return true;
 	}
 }
