@@ -23,4 +23,19 @@ public class Student {
 		int value = Character.toUpperCase(name.charAt(n));
 		return value;
 	}
+	public boolean equals(Student s1) {
+		String val1 = (s1.name).toUpperCase();
+		String val2 = (this.name).toUpperCase();
+		int length = val1.length();
+		if(length == val2.length()) {
+			for(int i = 0; i < length; i++) {
+				if (val1.charAt(i) != val1.charAt(i)) {
+					return false;
+				}
+			}
+		}else {
+			return false;
+		}
+		return true;
+	}
 }
