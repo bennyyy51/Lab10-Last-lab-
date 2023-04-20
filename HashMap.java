@@ -76,4 +76,31 @@ public class HashMap {
 		add(val);
 		return true;
 	}
+	// Find Method 
+    /**
+     * @author Liban Dahir
+     * @param key
+     * @return
+     */
+    public Student find(String key) {
+        Student dummyStudent = new Student(key);
+        int val1 = dummyStudent.getHashVal1() % HashMap.length;
+        int val2 = dummyStudent.getHashVal2() % HashMap.length;
+
+        if (val2 == 0) {
+            val2 = 1;
+        }
+        int point = val1;
+
+        while (point != val1) {
+            if (point >= HashMap.length) {
+                point -= HashMap.length;
+            }
+            if (HashMap[point] != null && HashMap[point].equals(dummyStudent)) {
+                return HashMap[point];
+            }
+            point += val2;
+        }
+        return null;
+    }
 }
